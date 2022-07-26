@@ -118,7 +118,7 @@ session_start();
 						?>
 				<div class="col-md-6 w3layouts-reg-form contact-form-row-agileinfo">
 					<h4 class="form-con-txt">Service provider form</h4>
-					<form action="employees.php" method="post" class="banner_form contact-inner-form">
+					<form action="employees.php" method="post" enctype="multipart/form-data" class="banner_form contact-inner-form">
 						<div class="contact-form-left contact-field1">
 							<div class="sec-left">
 								<label class="contact-form-text">Name</label>
