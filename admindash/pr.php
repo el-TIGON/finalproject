@@ -1,5 +1,5 @@
 <?php
-include('../config.php');
+include('../includes/config.php');
 if(isset($_POST['registerbtn'])) {
     $prname = $_POST['prname'];
     $service = $_POST['service'];
