@@ -28,7 +28,6 @@
 			<div class="clearfix"> </div>
 			<div class="logo-nav-left1">
 				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
 							<span class="sr-only">Toggle navigation</span>
@@ -41,19 +40,19 @@
 					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="index.html">Home</a>
+								<a href="index.php">Home</a>
 							</li>
 							<li>
-								<a href="about.html">about us</a>
+								<a href="about.php">about us</a>
 							</li>
 							<li>
-								<a href="services.html">services</a>
+								<a href="services.php">services</a>
 							</li>
 							<li>
-								<a href="contact.html">contact us</a>
+								<a href="contact.php">contact us</a>
 							</li>
 							<li>
-								<a href="provider.html">register as service provider</a>
+								<a href="provider.php">register as service provider</a>
 							</li>
 							<li>
 								<button class="btn btn-danger">
