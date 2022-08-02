@@ -131,8 +131,8 @@
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-tx contact-field3">
-							<label class="contact-form-text">Address</label>
-							<textarea placeholder="your address" required=""></textarea>
+							<label class="contact-form-text">message</label>
+							<textarea placeholder="your message" required=""></textarea>
 						</div>
 						<div class="contact-form contact-field2">
 							<input type="submit" value="send message">
