@@ -4,9 +4,13 @@ if(isset($_GET['id'])) {
 
     $id = $_GET['id'];
 
-    $stmt = $mysqli->prepare("DELETE FROM book WHERE id = ?");
-    $stmt->bind_param('i', $id);
-    $stmt->execute(); 
-    $stmt->close();
+    $sql = "DELETE FROM `book` WHERE `id` = $id";
+    $result = mysqli_query($conn, $sql);
+    if($result) {
+      
+        header('location: clients.php');
+    } else {
+        echo "Error deleting record: " . mysqli_error($conn);
+    }
 }
 ?>

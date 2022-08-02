@@ -1,7 +1,7 @@
 <div class="logo-nav-agileits">
 				<div class="logo-nav-left">
 					<h1>
-						<a href="index.html">
+						<a href="index.php">
 							<span class="fa fa-"></span>  Home service
 						</a>
 					</h1>

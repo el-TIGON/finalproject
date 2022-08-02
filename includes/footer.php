@@ -41,8 +41,8 @@
 			<div class="footer-top">
 				<div class="logo-nav-left footer-top1">
 					<h2>
-						<a href="index.html">
-							<span class="fa fa-home logo-ftr"></span>home services
+						<a href="index.PHP">
+							<span class="fa fa-"></span>home services
 						</a>
 					</h2>
 				</div>
