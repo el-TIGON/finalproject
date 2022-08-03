@@ -43,13 +43,34 @@ include('includes/navbar.php');
 					<form action="/dbfiles/employees.php" method="post" enctype="multipart/form-data" class="banner_form contact-inner-form">
 						<div class="contact-form-left contact-field1">
 							<div class="sec-left">
-								<label class="contact-form-text">Name</label>
-								<input placeholder="your name " name="firstname" type="text" required="">
+								<label class="contact-form-text">first Name</label>
+								<input placeholder=" " name="firstname" type="text" required="">
 							</div>
-							<div class="sec-right">
-								<label class="contact-form-text">Email</label>
-								<input placeholder="your Email " name="email" type="email" required="">
+							<div class="sec-left">
+								<label class="contact-form-text">last Name</label>
+								<input placeholder=" " name="lastname" type="text" required="">
 							</div>
+							<div class="sec-left">
+								<label class="contact-form-text">email</label>
+								<input placeholder=" " name="email" type="email" required="">
+							</div>
+							<div class="sec-left">
+								<label class="contact-form-text">phone</label>
+								<input placeholder=" " name="phone" type="text" required="">
+							</div>
+							<div class="sec-left">
+								<label class="contact-form-text">current address</label>
+								<input placeholder=" " name="address" type="text" required="">
+							</div>
+							<div class="sec-left">
+								<label class="contact-form-text">Education</label>
+								<input placeholder=" " name="education" type="text" required="">
+							</div>
+							<div class="sec-left">
+								<label class="contact-form-text">services</label>
+								<input placeholder=" " name="field" type="text" required="">
+								
+						</div>
 						</div>
 						<div class="clearfix"></div>
 						<div class="sec-right">

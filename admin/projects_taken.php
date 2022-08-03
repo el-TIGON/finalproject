@@ -29,7 +29,7 @@ include('includes/navbar.php');
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="pr.php" method="POST">
+      <form action="prdb.php" method="POST">
 
         <div class="modal-body">
 

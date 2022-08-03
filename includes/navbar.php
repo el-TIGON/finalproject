@@ -54,11 +54,7 @@
 							<li>
 								<a href="provider.php">register as service provider</a>
 							</li>
-							<li>
-								<button class="btn btn-danger">
-									<a href="login.php">login</a>
-								</button>
-							</li>
+							
 							
 						</ul>
 					</div>

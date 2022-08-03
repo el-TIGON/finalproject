@@ -277,11 +277,11 @@ include('includes/navbar.php');
 					<div class="team-row">
 						<div class="col-md-6 col-xs-6 team-grids">
 							<div class="team-gridimg">
-								<img class="img-responsive" src="images/m1.jpg" alt="">
+								<img class="img-responsive" src="images/m11.jpg" alt="">
 								<div class="captn">
 									<div class="captn-top">
-										<h4>Nathan</h4>
-										<p>Managing Director</p>
+										<h4>Tom</h4>
+										<p>Ciro</p>
 									</div>
 									<div class="social-teamicon teaminfo-social-grids">
 										<ul>
@@ -307,11 +307,11 @@ include('includes/navbar.php');
 						</div>
 						<div class="col-md-6 col-xs-6 team-grids">
 							<div class="team-gridimg">
-								<img class="img-responsive" src="images/m2.jpg" alt="">
+								<img class="img-responsive" src="images/m12.jpg" alt="">
 								<div class="captn">
 									<div class="captn-top">
-										<h4>Hoover</h4>
-										<p>Human Resources</p>
+										<h4>Mo abraham</h4>
+										<p>Human Ai</p>
 									</div>
 									<div class="social-teamicon teaminfo-social-grids">
 										<ul>
@@ -337,11 +337,11 @@ include('includes/navbar.php');
 						</div>
 						<div class="col-md-6 col-xs-6 team-grids">
 							<div class="team-gridimg">
-								<img class="img-responsive" src="images/m3.jpg" alt="">
+								<img class="img-responsive" src="images/m13.jpg" alt="">
 								<div class="captn">
 									<div class="captn-top">
-										<h4>James</h4>
-										<p>Chief Risk Officer</p>
+										<h4>Canada</h4>
+										<p>Wad is waleysaa</p>
 									</div>
 									<div class="social-teamicon teaminfo-social-grids">
 										<ul>
@@ -367,7 +367,7 @@ include('includes/navbar.php');
 						</div>
 						<div class="col-md-6 col-xs-6 team-grids">
 							<div class="team-gridimg">
-								<img class="img-responsive" src="images/m4.jpg" alt="">
+								<img class="img-responsive" src="images/.jpg" alt="">
 								<div class="captn">
 									<div class="captn-top">
 										<h4>Sturgill</h4>

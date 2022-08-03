@@ -32,7 +32,7 @@ include('includes/header.php');
                 ?>
               </div>
 
-                <form class="user" action="logincode.php" method="POST">
+                <form class="user" action="logindb.php" method="POST">
 
                     <div class="form-group">
                     <input type="username" name="username" class="form-control form-control-user" placeholder="Enter username...">

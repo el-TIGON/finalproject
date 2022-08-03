@@ -92,6 +92,7 @@ include('includes/navbar.php');
 									<option value="Carpentry" >Carpentry</option>
 									<option value="Gardening" >Gardening</option>
 									<option value="Cleaning" >Cleaning</option>
+									<option value="pests" >pests killer</option>
 									
 								</select>
 							</div>

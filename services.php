@@ -61,13 +61,13 @@ include('includes/navbar.php');
 					</div>
 					
 					<div class="col-md-4 serv-sub1">
-						<img src="images/t2.jpg" alt="" />
+						<img src="images/spr1.jpg" alt="" />
 						<h5>pest killer</h5>
 					</div>
 					
 					<div class="col-md-4 serv-sub1">
-						<img src="images/t2.jpg" alt="" />
-						<h5>house moving</h5>
+						<img src="images/spr2.jpg" alt="" />
+						<h5>gardening</h5>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
