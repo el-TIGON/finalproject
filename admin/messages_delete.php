@@ -2,10 +2,10 @@
 include('../includes/config.php');
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "DELETE FROM job WHERE id = $id";
+    $sql = "DELETE FROM contacts WHERE id = $id";
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        header('location: job.php');
+        header('location: messages.php');
     }
 }
 ?>

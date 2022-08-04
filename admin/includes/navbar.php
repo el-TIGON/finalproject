@@ -26,6 +26,12 @@
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
+
+<li class="nav-item">
+                <a class="nav-link" href="messages.php">
+                    <i class="fas fa-comments"></i>
+                    <span>messages</span></a>
+            </li>
 <li class="nav-item">
                 <a class="nav-link" href="clients.php">
                     <i class="fas fa-user"></i>
@@ -55,6 +61,7 @@
                     <i class="fas fa-users"></i>
                     <span>Admin registration</span></a>
             </li>
+            
 
 <!-- Divider -->
 </ul>

@@ -40,8 +40,15 @@ include('includes/navbar.php');
 						?>
 				<div class="col-md-6 w3layouts-reg-form contact-form-row-agileinfo">
 					<h4 class="form-con-txt">Service provider form</h4>
-					<form action="/dbfiles/employees.php" method="post" enctype="multipart/form-data" class="banner_form contact-inner-form">
+					<form action="employees.php" method="post" enctype="multipart/form-data" class="banner_form contact-inner-form">
 						<div class="contact-form-left contact-field1">
+						<?php
+						if (isset($_SESSION['status']))
+						{
+							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
+							unset($_SESSION['status']);
+						}
+						?>
 							<div class="sec-left">
 								<label class="contact-form-text">first Name</label>
 								<input placeholder=" " name="firstname" type="text" required="">
@@ -68,7 +75,7 @@ include('includes/navbar.php');
 							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">services</label>
-								<input placeholder=" " name="field" type="text" required="">
+								<input placeholder=" " name="services" type="text" required="">
 						
 						</div>
 						</div>

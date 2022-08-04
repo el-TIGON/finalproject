@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('includes/header.php');
 include('includes/navbar.php');
 ?>
@@ -40,25 +41,33 @@ include('includes/navbar.php');
 					</div>
 				</div>
 				<div class="col-md-6 w3layouts-reg-form contact-form-row-agileinfo">
-					<h4 class="form-con-txt">send us a mail</h4>
-					<form action="/dbfiles/message.php" method="post" class="banner_form contact-inner-form">
+					<h4 class="form-con-txt">send us a message</h4>
+					<form action="message.php" method="post" class="banner_form contact-inner-form">
 						<div class="contact-form-left contact-field1">
+						<?php
+						if (isset($_SESSION['status']))
+						{
+							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
+							unset($_SESSION['status']);
+						}
+						?>
+						
 							<div class="sec-left">
 								<label class="contact-form-text">Name</label>
-								<input placeholder="your name " name="first name" type="text" required="">
+								<input placeholder="your name " name="Name" type="text" required="">
 							</div>
 							<div class="sec-right">
 								<label class="contact-form-text">Email</label>
-								<input placeholder="your Email " name="first name" type="email" required="">
+								<input placeholder="your Email " name="email" type="email" required="">
 							</div>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-tx contact-field3">
 							<label class="contact-form-text">message</label>
-							<textarea placeholder="your message" required=""></textarea>
+							<textarea placeholder="your message" required="" name="message"></textarea>
 						</div>
 						<div class="contact-form contact-field2">
-							<input type="submit" value="send message">
+							<input type="submit" value="send message" name="__submit">
 						</div>
 					</form>
 				</div>

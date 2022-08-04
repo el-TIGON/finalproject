@@ -65,7 +65,7 @@ include('includes/navbar.php');
 							<p>We solve your Home repair needs!</p>
 							<img src="images/f1.png" alt="" />
 						</div>
-						<form action="/dbfiles/booking.php" method="post" class="banner_form">
+						<form action="booking.php" method="post" class="banner_form">
 							<div class="sec-left">
 								<label class="contact-form-text">Name</label>
 								<input placeholder="your name " name="username" type="text" required="">
@@ -155,7 +155,7 @@ include('includes/navbar.php');
 			</div>
 			<div class="col-md-8 about-bottom-g1">
 				<h4>One Stop Solution for your Complete Home Maintenance</h4>
-				<!-- <h4>get easy home repairs and upgrades with professional home service providers</h4> your complete home solution.-->
+				<h4>get easy home repairs and upgrades with professional home service providers your complete home solution<h4>
 				<div class="about-grid">
 					<div class="about-bottom-right">
 						<div class="abouthome-grid">
@@ -163,7 +163,6 @@ include('includes/navbar.php');
 						</div>
 						<div class="about-bottom">
 							<h5>vision</h5>
-							<p>Consectetur adipiscing elit estibulum nibh urna</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -216,7 +215,7 @@ include('includes/navbar.php');
 				<div class="col-md-6 col-sm-6 mb-right">
 					<h4>service you can trust</h4>
 					<p>protect all your home appliances & systems.</p>
-					<a href="services.html">view all services</a>
+					<a href="services.php">view all services</a>
 				</div>
 			</div>
 		</div>
