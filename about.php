@@ -177,7 +177,10 @@ include('includes/navbar.php');
 							<a href="single.html">
 								<h4>home Maintenance</h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>The little things add up. That's why regular maintenance in and around the home is especially important. 
+								 All of our home improvement professionals know exactly what to look for and how to fix it. 
+								 From replacing grout in the bathroom to installing a fan, 
+								let us tackle the small and large projects on your list.</p>
 						</div>
 					</div>
 				</div>
@@ -192,7 +195,9 @@ include('includes/navbar.php');
 							<a href="single.html">
 								<h4>repair</h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>When stuff breaks, we fix it. Our home repair contractors can save you the time and money it would otherwise cost to find and install a replacement for your broken fixtures and household items.
+								We believe in a convenient, one-call solution where one call can get one of our house repair contractors on the way to fixing whatever you need fixed. 
+								Our professional repair services are backed by our Done Right Guarantee. With Home service, You Know What to Expect</p>
 						</div>
 					</div>
 				</div>
@@ -207,7 +212,10 @@ include('includes/navbar.php');
 							<a href="single.html">
 								<h4>Improvement</h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>Everyone knows that some improvements required usually means lots of improvements. 
+								Home service gets your furniture and equipment out of the box and into your home or yard, 
+								so you don't have to agonize over confusing instructions. Directions for assembling a new piece of furniture can be confusing and the assemblies themselves can be involved and time consuming. 
+								Home service professionals handle assembly needs right away. </p>
 						</div>
 					</div>
 				</div>
@@ -220,9 +228,11 @@ include('includes/navbar.php');
 						</div>
 						<div class="news-gridimgtext">
 							<a href="single.html">
-								<h4>plumbing services</h4>
+								<h4>plumber services</h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>Bathrooms are a hub of activity, and you want everything to look beautiful: walls, floors, and vanities. 
+								Whatever the project is that you need completed, we promise to arrive on time and perform quality workmanship
+								that's guaranteed to your satisfaction.</p>
 						</div>
 					</div>
 				</div>
@@ -237,7 +247,7 @@ include('includes/navbar.php');
 							<a href="single.html">
 								<h4>electrical services </h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>have household projects that involve electrical componenets? if it feels like overkill to hire an electritcal, hire our electrical service  instead. we can install new feautures and fix existing ones. </p>
 						</div>
 					</div>
 				</div>
@@ -253,7 +263,7 @@ include('includes/navbar.php');
 							<a href="single.html">
 								<h4>painting services </h4>
 							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida mauris non mi gravida, at sollicitudin. </p>
+							<p>bring color to your home with our painting services! No matter if you want to add life to furniture with a new stain job or if you want to paint your waalls, we can handle it for you</p>
 						</div>
 					</div>
 				</div>

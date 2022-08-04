@@ -89,22 +89,21 @@ include('includes/navbar.php');
 					<div class="w3l-media">
 						<h5>plumbing services</h5>
 						<div class="media-body">
-							<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id
-								ex pretium hendrerit</p>
+							<p>Bathrooms are a hub of activity, and you want everything to look beautiful: walls, floors, and vanities. 
+								Whatever the project is that you need completed, we promise to arrive on time and perform quality workmanship
+								that's guaranteed to your satisfaction.</p>
 						</div>
 					</div>
 					<div class="w3l-media">
 						<h5>electrical services</h5>
 						<div class="media-body">
-							<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id
-								ex pretium hendrerit</p>
+							<p>ave household projects that involve electrical componenets? if it feels like overkill to hire an electritcal, hire our electrical service  instead. we can install new feautures and fix existing ones.</p>
 						</div>
 					</div>
 					<div class="w3l-media">
 						<h5>painting services</h5>
 						<div class="media-body">
-							<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id
-								ex pretium hendrerit</p>
+							<p>bring color to your home with our painting services! No matter if you want to add life to furniture with a new stain job or if you want to paint your waalls, we can handle it for you</p>
 						</div>
 					</div>
 

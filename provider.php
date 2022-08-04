@@ -68,10 +68,14 @@ include('includes/navbar.php');
 							<div class="sec-left">
 								<label class="contact-form-text">current address</label>
 								<input placeholder=" " name="address" type="text" required="">
-							</div>
-							<div class="sec-left">
-								<label class="contact-form-text">Education</label>
-								<input placeholder=" " name="education" type="text" required="">
+							</div><div class="sec-left">
+								<label class="contact-form-text">Education level</label>
+								<select name="education">
+									<option value="0">---- SELECT ----</option>
+									<option value="highschool" >High school</option>
+									<option value="diploma" >Diploma</option>
+									<option value="degree" >Degree</option>
+								</select>
 							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">services</label>

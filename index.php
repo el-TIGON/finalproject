@@ -103,15 +103,18 @@ include('includes/navbar.php');
 						<div class="col-md-4 banner-grid2">
 							<div class="banner-subg1">
 								<h3>maintenance</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit estibulum nibh urna scing.</p>
+								<p>The little things add up. That's why regular maintenance in and around the home is especially important. 
+								 All of our home improvement professionals know exactly what to look for and how to fix it. 
+								 From replacing grout in the bathroom to installing a fan, 
+								let us tackle the small and large projects on your list.</p>
 								<span class="fa fa-cog" aria-hidden="true"></span>
 								<div class="read-btn">
 									<a href="about.html">view more</a>
 								</div>
 							</div>
 							<div class="banner-subg1">
-								<h3>cleaning</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit estibulum nibh urna scing.</p>
+								<h3>carpentry</h3>
+								<p>With an average of 10 years' experience, our home improvement professionals are skilled carpenters and furniture builders. We install and build fireplace mantels, cabinets, bookcases, wooden countertops and more.</p>
 								<span class="fa fa-check-square-o" aria-hidden="true"></span>
 								<div class="read-btn">
 									<a href="about.html">view more</a>
@@ -122,7 +125,9 @@ include('includes/navbar.php');
 						<div class="col-md-4 banner-grid2">
 							<div class="banner-subg1">
 								<h3>repair</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit estibulum nibh urna scing.</p>
+								<p>When stuff breaks, we fix it. Our home repair contractors can save you the time and money it would otherwise cost to find and install a replacement for your broken fixtures and household items.
+								We believe in a convenient, one-call solution where one call can get one of our house repair contractors on the way to fixing whatever you need fixed. 
+								Our professional repair services are backed by our Done Right Guarantee. With Home service, You Know What to Expect.</p>
 								<span class="fa fa-yelp" aria-hidden="true"></span>
 								<div class="read-btn">
 									<a href="about.html">view more</a>
@@ -130,7 +135,10 @@ include('includes/navbar.php');
 							</div>
 							<div class="banner-subg1">
 								<h3>improvement</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit estibulum nibh urna scing.</p>
+								<p>Everyone knows that some improvements required usually means lots of improvements. 
+								Home service gets your furniture and equipment out of the box and into your home or yard, 
+								so you don't have to agonize over confusing instructions. Directions for assembling a new piece of furniture can be confusing and the assemblies themselves can be involved and time consuming. 
+								Home service professionals handle assembly needs right away..</p>
 								<span class="fa fa-gg" aria-hidden="true"></span>
 								<div class="read-btn">
 									<a href="about.html">view more</a>
@@ -155,7 +163,7 @@ include('includes/navbar.php');
 			</div>
 			<div class="col-md-8 about-bottom-g1">
 				<h4>One Stop Solution for your Complete Home Maintenance</h4>
-				<h4>get easy home repairs and upgrades with professional home service providers your complete home solution<h4>
+				
 				<div class="about-grid">
 					<div class="about-bottom-right">
 						<div class="abouthome-grid">
