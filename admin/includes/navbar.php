@@ -51,7 +51,7 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="clients.php">
+                <a class="nav-link" href="employeesinfo.php">
                     <i class="fas fa-users"></i>
                     <span>Employees information</span></a>
             </li>

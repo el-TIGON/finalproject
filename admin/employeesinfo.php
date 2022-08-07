@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -25,7 +24,7 @@ include('includes/navbar.php');
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add project data</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add employee info</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -35,8 +34,8 @@ include('includes/navbar.php');
         <div class="modal-body">
 
             <div class="form-group">
-                <label> Project name </label>
-                <input type="text" name="prname" class="form-control" placeholder="project name">
+                <label> Name </label>
+                <input type="text" name="Name" class="form-control" placeholder="project name">
             </div>
         
             <div class="form-group">
@@ -44,12 +43,8 @@ include('includes/navbar.php');
                 <input type="text" name="service" class="form-control" placeholder="services">
             </div>
             <div class="form-group">
-                <label>Project description</label>
+                <label>description</label>
                 <input type="text" name="prdescription" class="form-control" placeholder="descrription">
-            </div>
-            <div class="form-group">
-                <label>Payment</label>
-                <input type="number" name="payment" class="form-control" placeholder="payment in $">
             </div>
 
 
@@ -65,7 +60,7 @@ include('includes/navbar.php');
 </div>
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
-       Add project
+       Add employee info
 </button>
 </div>
 <div class="card-body">
@@ -76,12 +71,10 @@ include('includes/navbar.php');
         <thead>
           <tr>
             <th>ID </th>
-            <th>Project name </th>
+            <th>name </th>
             <th>Service </th>
-            <th>Project description</th>
-            <th>Payment in $ </th>
-            <th>stutus </th>
-          </tr>
+            <th>description</th>
+             </tr>
         </thead>
         <tbody>
             <?php
