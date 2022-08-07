@@ -17,7 +17,7 @@ if(isset($_POST['login_btn']))
    else
    {
         $_SESSION['status'] = "username / Password is Invalid";
-        header('Location: login.php');
+        header('Location: index.php');
    }
 }
 ?>

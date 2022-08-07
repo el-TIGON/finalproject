@@ -1,4 +1,5 @@
 <?php
+
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -36,7 +37,7 @@ include('includes/navbar.php');
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Admins </div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
-                                                $query = "SELECT reg_id FROM registration ORDER BY id DESC";
+                                                $query = "SELECT reg_id FROM registration ORDER BY reg_id ASC";
                                                 $query_run = mysqli_query($con, $query);
                                                 $row = mysqli_num_rows($query_run);
                                                 echo '<h1> total Admins' . $row . '</h1>';
