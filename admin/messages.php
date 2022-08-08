@@ -45,11 +45,11 @@ include('includes/navbar.php');
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 echo "
                                                     <tr>
-                                                    <td>" . $row['id'] . "</td>
+                                                    <td>" . $row['con_id'] . "</td>
                                                     <td>" . $row['name'] . "</td>
                                                     <td>" . $row['email'] . "</td>
                                                     <td>" . $row['message'] . "</td>
-                                                    <td> <a href='message_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
+                                                    <td> <a href='message_delete.php?con_id=" . $row['con_id'] . "' class='btn btn-danger'>Delete</a></td>
                                                    </tr>";
                                             }
                                             ?>

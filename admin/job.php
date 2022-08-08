@@ -58,7 +58,7 @@ include('includes/navbar.php');
                                                 <td>" . $row['education'] . "</td>
                                                 <td>" . $row['service'] . "</td>
                                                 <td>" . $row['cv'] . "</td>
-                                                <td> <a href='job_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
+                                                <td> <a href='job_delete.php?em_id=" . $row['em_id'] . "' class='btn btn-danger'>Delete</a></td>
                                                 </tr>";
                                             }
                                             ?>

@@ -38,10 +38,10 @@ include('includes/navbar.php');
                                             </div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
-                                                $query = "SELECT reg_id FROM registration ORDER BY reg_id ASC";
-                                                $query_run = mysqli_query($con, $query);
+                                                $query = "SELECT reg_id FROM registration ORDER BY reg_id DESC";
+                                                $query_run = mysqli_query($conn, $query);
                                                 $row = mysqli_num_rows($query_run);
-                                                echo '<h1> total Admins' . $row . '</h1>';
+                                                echo '<h1> ' . $row . '</h1>';
                                                 ?>
                                             </div>
                                         </div>
@@ -64,9 +64,9 @@ include('includes/navbar.php');
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
                                                 $query = "SELECT id FROM project ORDER BY id DESC";
-                                                $query_run = mysqli_query($con, $query);
+                                                $query_run = mysqli_query($conn, $query);
                                                 $row = mysqli_num_rows($query_run);
-                                                echo '<h1> total Projects' . $row . '</h1>';
+                                                echo '<h1>' . $row . '</h1>';
                                                 ?>
                                             </div>
                                         </div>
@@ -83,13 +83,13 @@ include('includes/navbar.php');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                               Employee</div>
+                                               Employees</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
-                                                $query = "SELECT id FROM employee ORDER BY id DESC";
-                                                $query_run = mysqli_query($con, $query);
+                                                $query = "SELECT em_id FROM employees ORDER BY em_id DESC";
+                                                $query_run = mysqli_query($conn, $query);
                                                 $row = mysqli_num_rows($query_run);
-                                                echo '<h1>Employees' . $row . '</h1>';
+                                                echo '<h1>' . $row . '</h1>';
                                                 ?>
                                             </div>
                                         </div>
@@ -110,9 +110,9 @@ include('includes/navbar.php');
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
                                                 $query = "SELECT id FROM book ORDER BY id DESC";
-                                                $query_run = mysqli_query($con, $query);
+                                                $query_run = mysqli_query($conn, $query);
                                                 $row = mysqli_num_rows($query_run);
-                                                echo '<h1> total requests' . $row . '</h1>';
+                                                echo '<h1>' . $row . '</h1>';
                                                 ?>
                                             </div>
                                         </div>

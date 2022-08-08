@@ -51,8 +51,6 @@ include('includes/navbar.php');
                 <label>Payment</label>
                 <input type="number" name="payment" class="form-control" placeholder="payment in $">
             </div>
-
-
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -69,7 +67,13 @@ include('includes/navbar.php');
 </button>
 </div>
 <div class="card-body">
-
+<?php
+						if (isset($_SESSION['status']))
+						{
+							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
+							unset($_SESSION['status']);
+						}
+						?>
     <div class="table-responsive">
 
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

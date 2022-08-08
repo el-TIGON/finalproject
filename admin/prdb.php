@@ -3,7 +3,7 @@ session_start();
 include('../includes/config.php');
 if(isset($_POST['registerbtn'])) {
     $prname = $_POST['prname'];
-    $service = $_POST['services'];
+    $service = $_POST['service'];
     $prdescription = $_POST['prdescription'];
     $payment = $_POST['payment'];
     
@@ -12,7 +12,6 @@ if(isset($_POST['registerbtn'])) {
             
             if($query_run)
             {
-                // echo "Saved";
                 $_SESSION['status'] = "project Added";
                 $_SESSION['status_code'] = "success";
                 header('Location: projects_taken.php');

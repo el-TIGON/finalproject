@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../includes/config.php');
 if(isset($_POST['regbtn'])) {
     $username = $_POST['username'];
@@ -9,7 +10,6 @@ if(isset($_POST['regbtn'])) {
             
             if($query_run)
             {
-                // echo "Saved";
                 $_SESSION['status'] = "admin was Added";
                 $_SESSION['status_code'] = "success";
                 header('Location: registration.php');

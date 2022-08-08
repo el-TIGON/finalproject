@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -56,6 +57,13 @@ include('includes/navbar.php');
 <div class="card-body">
 
     <div class="table-responsive">
+    <?php
+						if (isset($_SESSION['status']))
+						{
+							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
+							unset($_SESSION['status']);
+						}
+						?>
 
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
@@ -75,11 +83,10 @@ include('includes/navbar.php');
                 echo '<tr>
                 <td>'.$id.'</td>
                 <td>'.$username.'</td>
-                <td>'.'<a href="regis_delete.php?delete='.$id.'" class="btn btn-danger">Delete</a>'.'</td>
+                <td><a href="registration_delete.php?reg_id='.$id.'" class="btn btn-danger">Delete</a></td>
                 </tr>';
             }
-            ?>
-        
+            ?>  
         </tbody>
       </table>
 
