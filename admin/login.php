@@ -1,8 +1,9 @@
 <?php
 session_start();
+$_SESSION['auth'] = "OKAY";
+
 include('includes/header.php'); 
 ?>
-
 
 <body class="bg-gradient-primary">
   
