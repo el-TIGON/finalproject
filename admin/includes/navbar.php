@@ -140,7 +140,8 @@
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                    
                     Admin
-                    
+
+
                 </span>
                     <img class="img-profile rounded-circle"
                         src="img/undraw_profile.svg">

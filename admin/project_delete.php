@@ -8,9 +8,7 @@ if(isset($_GET['id'])) {
     $result = mysqli_query($conn, $sql);
     if($result) {
       
-        header('location: project_taken.php');
-    } else {
-        echo "Error deleting record: " . mysqli_error($conn);
+        header('location: projects_taken.php');
     }
 }
 ?>

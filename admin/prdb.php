@@ -9,7 +9,7 @@ if(isset($_POST['registerbtn'])) {
     $payment = $_POST['payment'];
     
     $query = "INSERT INTO project (prname, services , prdescription, payment) VALUES ('$prname','$service','$prdescription','$payment')";
-            $query_run = mysqli_query($connection, $query);
+            $query_run = mysqli_query($conn, $query);
             
             if($query_run)
             {

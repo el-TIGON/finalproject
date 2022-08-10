@@ -54,7 +54,7 @@ include('includes/navbar.php');
                                                     <td>" . $row['name'] . "</td>
                                                     <td>" . $row['email'] . "</td>
                                                     <td>" . $row['message'] . "</td>
-                                                    <td> <a href='message_delete.php?con_id=" . $row['con_id'] . "' class='btn btn-danger'>Delete</a></td>
+                                                    <td> <a href='messages_delete.php?con_id=" . $row['con_id'] . "' class='btn btn-danger'>Delete</a></td>
                                                    </tr>";
                                             }
                                             ?>

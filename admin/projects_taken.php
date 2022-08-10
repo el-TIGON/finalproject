@@ -94,11 +94,11 @@ include('includes/navbar.php');
         <tbody>
             <?php
             $query = "SELECT * FROM project";
-            $query_run = mysqli_query($connection, $query);
+            $query_run = mysqli_query($conn, $query);
             while($row = mysqli_fetch_assoc($query_run)){
                 $id = $row['id'];
                 $prname = $row['prname'];
-                $service = $row['service'];
+                $service = $row['services'];
                 $prdescription = $row['prdescription'];
                 $payment = $row['payment'];
                 $status = $row['status'];
@@ -108,7 +108,8 @@ include('includes/navbar.php');
                 <td>'.$service.'</td>
                 <td>'.$prdescription.'</td>
                 <td>'.$payment.'</td>
-                <td> <a href="project_delete.php?delete='.$id.'" class="btn btn-danger">Delete</a> </td>
+                <td>'.$status.'</td>
+                <td><a href="project_delete.php?id='. $row ['id'] .'" class="btn btn-danger">Delete</a></td>
                 </tr>';
             }
             ?>
