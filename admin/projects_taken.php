@@ -25,92 +25,7 @@ include('includes/navbar.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-  <div class="modal fade" id="addadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add project data</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="prdb.php" method="POST">
 
-        <div class="modal-body">
-
-            <div class="form-group">
-                <label> Project name </label>
-                <input type="text" name="prname" class="form-control" placeholder="project name">
-            </div>
-        
-            <div class="form-group">
-                <label>Services</label>
-                <input type="text" name="service" class="form-control" placeholder="services">
-            </div>
-            <div class="form-group">
-                <label>Project description</label>
-                <input type="text" name="prdescription" class="form-control" placeholder="descrription">
-            </div>
-            <div class="form-group">
-                <label>Payment</label>
-                <input type="number" name="payment" class="form-control" placeholder="payment in $">
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
-  Add project
-</button>
-</div>
-<!-- edit model -->
-<div class="modal fade" id="editadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add project data</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="prdb.php" method="POST">
-
-        <div class="modal-body">
-
-            <div class="form-group">
-                <label> Project name </label>
-                <input type="text" name="prname" class="form-control" placeholder="project name">
-            </div>
-        
-            <div class="form-group">
-                <label>Services</label>
-                <input type="text" name="service" class="form-control" placeholder="services">
-            </div>
-            <div class="form-group">
-                <label>Project description</label>
-                <input type="text" name="prdescription" class="form-control" placeholder="descrription">
-            </div>
-            <div class="form-group">
-                <label>Payment</label>
-                <input type="number" name="payment" class="form-control" placeholder="payment in $">
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-<!-- /edit model -->
 
 <div class="card-body">
 <?php
@@ -156,7 +71,7 @@ include('includes/navbar.php');
                 <td>'.$startday.'</td>
                 <td>'.$endday.'</td>
                 <td><a href="project_delete.php?id='. $row ['id'] .'" class="btn btn-danger">Delete</a></td>
-                <td><button type="button" class"btn btn-success editbtn"> Edit</button></td>
+                <td><a href="project_edit.php?id='. $row ['id'] .'" class="btn btn-primary">Edit</a></td>
                 </tr>';
             }
             ?>
@@ -174,12 +89,7 @@ include('includes/navbar.php');
 
             </div>
             <!-- End of Main Content -->
-            <script>
-                $(document).ready(function(){
-                    $('.editbtn').on('click',function(){
-                        $('#editadminprofile').modal('show');
-                    });
-                });
+            
 <?php 
 include ("includes/footer.php");
 include ("includes/scripts.php");

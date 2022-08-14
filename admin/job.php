@@ -44,7 +44,7 @@ include('includes/navbar.php');
                                             <th>Education</th>
                                             <th>Service</th>
                                             <th>CV</th>
-                                            <th>Action</th>
+                                            <th colspan="2">Action</th>
                                         </tr>
                                     </thead>
                                     
@@ -54,7 +54,7 @@ include('includes/navbar.php');
                                             $result = mysqli_query($conn, $sql);
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 echo "<tr>
-                                                <td>" . $row['emp_id'] . "</td>
+                                                <td>" . $row['em_id'] . "</td>
                                                 <td>" . $row['firstname'] . "</td>
                                                 <td>" . $row['lastname'] . "</td>
                                                 <td>" . $row['email'] . "</td>
@@ -64,6 +64,7 @@ include('includes/navbar.php');
                                                 <td>" . $row['service'] . "</td>
                                                 <td>" . $row['cv'] . "</td>
                                                 <td> <a href='job_delete.php?em_id=" . $row['em_id'] . "' class='btn btn-danger'>Delete</a></td>
+                                                <td> <a href='service_providersdb.php?em_id=" . $row['em_id'] . "' class='btn btn-success'>Approve</a></td>
                                                 </tr>";
                                             }
                                             ?>

@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!isset($_SESSION['auth']))
+{
+header("Location: login.php");
+}
 include('includes/config.php');
 if ($_POST['_apply']){
     $firstname = $_POST['firstname'];

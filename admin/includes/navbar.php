@@ -51,9 +51,9 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="employeesinfo.php">
+                <a class="nav-link" href="service_provider.php">
                     <i class="fas fa-users"></i>
-                    <span>Employees information</span></a>
+                    <span>service_providers</span></a>
             </li>
             
             <li class="nav-item">

@@ -54,6 +54,9 @@
 							<li>
 								<a href="provider.php">register as service provider</a>
 							</li>
+							<li>
+								<a href="login.php">login</a>
+							</li>
 							
 							
 						</ul>

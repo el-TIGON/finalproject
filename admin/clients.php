@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!isset($_SESSION['auth']))
+{
+header("Location: login.php");
+}
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -62,7 +66,8 @@ include('includes/navbar.php');
                                                     <td>" . $row['address'] . "</td>
                                                     <td>" . $row['service'] . "</td>
                                                     <td> <a href='client_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
-                                                    <td> <a href='prdbtestings.php?service= " . $row['service']. "' class='btn btn-primary'>Take</a></td>
+                                                    <td> <a href='prdb.php?id= " . $row['id']. "' class='btn btn-primary'>Take</a></td>
+                                                    <td> <a href='automail.php?id=" . $row['id'] . "' class='btn btn-success'>send a mail</a></td>
                                                    </tr>";
                                             }
                                             ?>
