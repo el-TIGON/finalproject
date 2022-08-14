@@ -65,11 +65,53 @@ include('includes/navbar.php');
     </div>
   </div>
 </div>
-
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
-       Add project
+  Add project
 </button>
 </div>
+<!-- edit model -->
+<div class="modal fade" id="editadminprofile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add project data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="prdb.php" method="POST">
+
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label> Project name </label>
+                <input type="text" name="prname" class="form-control" placeholder="project name">
+            </div>
+        
+            <div class="form-group">
+                <label>Services</label>
+                <input type="text" name="service" class="form-control" placeholder="services">
+            </div>
+            <div class="form-group">
+                <label>Project description</label>
+                <input type="text" name="prdescription" class="form-control" placeholder="descrription">
+            </div>
+            <div class="form-group">
+                <label>Payment</label>
+                <input type="number" name="payment" class="form-control" placeholder="payment in $">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<!-- /edit model -->
+
 <div class="card-body">
 <?php
 						if (isset($_SESSION['status']))
@@ -85,10 +127,12 @@ include('includes/navbar.php');
           <tr>
             <th>ID </th>
             <th>Project name </th>
-            <th>Service </th>
             <th>Project description</th>
             <th>Payment in $ </th>
-            <th>stutus </th>
+            <th>Address</th>
+            <th>start day</th>
+            <th>end day</th>
+            <th colspan="2" >stutus </th>
           </tr>
         </thead>
         <tbody>
@@ -98,18 +142,21 @@ include('includes/navbar.php');
             while($row = mysqli_fetch_assoc($query_run)){
                 $id = $row['id'];
                 $prname = $row['prname'];
-                $service = $row['services'];
                 $prdescription = $row['prdescription'];
                 $payment = $row['payment'];
-                $status = $row['status'];
+                $address = $row['address'];
+                $startday = $row['startday'];
+                $endday = $row['finishday'];
                 echo '<tr>
                 <td>'.$id.'</td>
                 <td>'.$prname.'</td>
-                <td>'.$service.'</td>
                 <td>'.$prdescription.'</td>
                 <td>'.$payment.'</td>
-                <td>'.$status.'</td>
+                <td>'.$address.'</td>
+                <td>'.$startday.'</td>
+                <td>'.$endday.'</td>
                 <td><a href="project_delete.php?id='. $row ['id'] .'" class="btn btn-danger">Delete</a></td>
+                <td><button type="button" class"btn btn-success editbtn"> Edit</button></td>
                 </tr>';
             }
             ?>
@@ -127,6 +174,12 @@ include('includes/navbar.php');
 
             </div>
             <!-- End of Main Content -->
+            <script>
+                $(document).ready(function(){
+                    $('.editbtn').on('click',function(){
+                        $('#editadminprofile').modal('show');
+                    });
+                });
 <?php 
 include ("includes/footer.php");
 include ("includes/scripts.php");

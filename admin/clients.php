@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -21,6 +22,12 @@ include('includes/navbar.php');
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Table for clients</h1>
+                    <?php  if (isset($_SESSION['status']))
+						{
+							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
+							unset($_SESSION['status']);
+						}
+						?>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -28,6 +35,7 @@ include('includes/navbar.php');
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                          
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
@@ -54,6 +62,7 @@ include('includes/navbar.php');
                                                     <td>" . $row['address'] . "</td>
                                                     <td>" . $row['service'] . "</td>
                                                     <td> <a href='client_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
+                                                    <td> <a href='prdbtestings.php?service= " . $row['service']. "' class='btn btn-primary'>Take</a></td>
                                                    </tr>";
                                             }
                                             ?>
