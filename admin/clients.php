@@ -67,7 +67,7 @@ include('includes/navbar.php');
                                                     <td>" . $row['service'] . "</td>
                                                     <td> <a href='client_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
                                                     <td> <a href='prdb.php?id= " . $row['id']. "' class='btn btn-primary'>Take</a></td>
-                                                    <td> <a href='automail.php?id=" . $row['id'] . "' class='btn btn-success'>send a mail</a></td>
+                                                    <td> <a href='mail.php?id=" . $row['id'] . "' class='btn btn-success'>send a mail</a></td>
                                                    </tr>";
                                             }
                                             ?>
