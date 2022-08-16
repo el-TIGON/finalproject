@@ -1,102 +1,51 @@
 <?php
-require('../api/fpdf.php');
+include('../../includes/config.php');
+if(isset($_POST['generate'])){
+    $query = "SELECT COUNT(id) FROM book";
+    $query_run = mysqli_query($conn, $query);
+    $row = mysqli_fetch_array($query_run);
 
-class PDF extends FPDF
-{
-// Load data
-function LoadData($file)
-{
-    // Read file lines
-    $lines = file($file);
-    $data = array();
-    foreach($lines as $line)
-        $data[] = explode(';',trim($line));
-    return $data;
 }
 
-// Simple table
-function BasicTable($header, $data)
-{
-    // Header
-    foreach($header as $col)
-        $this->Cell(40,7,$col,1);
-    $this->Ln();
-    // Data
-    foreach($data as $row)
-    {
-        foreach($row as $col)
-            $this->Cell(40,6,$col,1);
-        $this->Ln();
-    }
-}
-
-// Better table
-function ImprovedTable($header, $data)
-{
-    // Column widths
-    $w = array(40, 35, 40, 45);
-    // Header
-    for($i=0;$i<count($header);$i++)
-        $this->Cell($w[$i],7,$header[$i],1,0,'C');
-    $this->Ln();
-    // Data
-    foreach($data as $row)
-    {
-        $this->Cell($w[0],6,$row[0],'LR');
-        $this->Cell($w[1],6,$row[1],'LR');
-        $this->Cell($w[2],6,number_format($row[2]),'LR',0,'R');
-        $this->Cell($w[3],6,number_format($row[3]),'LR',0,'R');
-        $this->Ln();
-    }
-    // Closing line
-    $this->Cell(array_sum($w),0,'','T');
-}
-
-// Colored table
-function FancyTable($header, $data)
-{
-    // Colors, line width and bold font
-    $this->SetFillColor(255,0,0);
-    $this->SetTextColor(255);
-    $this->SetDrawColor(128,0,0);
-    $this->SetLineWidth(.3);
-    $this->SetFont('','B');
-    // Header
-    $w = array(40, 35, 40, 45);
-    for($i=0;$i<count($header);$i++)
-        $this->Cell($w[$i],7,$header[$i],1,0,'C',true);
-    $this->Ln();
-    // Color and font restoration
-    $this->SetFillColor(224,235,255);
-    $this->SetTextColor(0);
-    $this->SetFont('');
-    // Data
-    $fill = false;
-    foreach($data as $row)
-    {
-        $this->Cell($w[0],6,$row[0],'LR',0,'L',$fill);
-        $this->Cell($w[1],6,$row[1],'LR',0,'L',$fill);
-        $this->Cell($w[2],6,number_format($row[2]),'LR',0,'R',$fill);
-        $this->Cell($w[3],6,number_format($row[3]),'LR',0,'R',$fill);
-        $this->Ln();
-        $fill = !$fill;
-    }
-    // Closing line
-    $this->Cell(array_sum($w),0,'','T');
-}
-}
-
-$pdf = new PDF();
-// Column headings
-$header = array('Country', 'Capital', 'Area (sq km)', 'Pop. (thousands)');
-// Data loading
-$data = $pdf->LoadData('countries.txt');
-$pdf->SetFont('Arial','',14);
-$pdf->AddPage();
-$pdf->BasicTable($header,$data);
-$pdf->AddPage();
-$pdf->ImprovedTable($header,$data);
-$pdf->AddPage();
-$pdf->FancyTable($header,$data);
-$pdf->Output();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Report</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<script>
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Report</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Book Report</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- card-body -->
+                                
+</body>   
