@@ -25,7 +25,11 @@ include('includes/navbar.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+                    <div>
                     <h1 class="h3 mb-2 text-gray-800">Table for clients</h1>
+                    <a href="request_" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
                     <?php  if (isset($_SESSION['status']))
 						{
 							echo '<div class="alert alert-success">'.$_SESSION['status'].'</div>';
@@ -49,6 +53,7 @@ include('includes/navbar.php');
                                             <th>Mobile</th>
                                             <th>Address</th>
                                             <th>Service</th>
+                                            <th>Date</th>
                                             <th colspan="3">Action</th>
                                         </tr>
                                     </thead>
@@ -65,10 +70,10 @@ include('includes/navbar.php');
                                                     <td>" . $row['mobile'] . "</td>
                                                     <td>" . $row['address'] . "</td>
                                                     <td>" . $row['service'] . "</td>
+                                                    <td>" . $row['date'] . "</td>
                                                     <td> <a href='client_delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>
                                                     <td> <a href='prdb.php?id= " . $row['id']. "' class='btn btn-primary'>Take</a></td>
-                                                    <td> <a href='mail.php?id=" . $row['id'] . "' class='btn btn-success'>send a mail</a></td>
-                                                   </tr>";
+                                                    </tr>";
                                             }
                                             ?>
 
