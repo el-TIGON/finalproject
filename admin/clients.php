@@ -27,7 +27,7 @@ include('includes/navbar.php');
                     <!-- Page Heading -->
                     <div>
                     <h1 class="h3 mb-2 text-gray-800">Table for clients</h1>
-                    <a href="request_" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                    <a href="request_report.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
                     <?php  if (isset($_SESSION['status']))

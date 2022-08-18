@@ -1,5 +1,5 @@
-# finalproject
-95% forntend 
-backend 99% waxa hadhy tablekii jobska 
+this was for final thesis project f0r Abaarso tech university 2022
 
-waxa aanu isku hadhy admin dashboardkii 
+this project was build with PHP, MQSL, XAMPP
+
+AND WAS done BY FOUR UNDERGRADUTE 

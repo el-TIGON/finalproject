@@ -54,15 +54,15 @@ include('includes/navbar.php');
 								<input placeholder="name" name="firstname" type="text" required="">
 							</div>
 							<div class="sec-left">
-								<label class="contact-form-text">email</label>
+								<label class="contact-form-text">Email</label>
 								<input placeholder="email" name="email" type="email" required="">
 							</div>
 							<div class="sec-left">
-								<label class="contact-form-text">phone</label>
+								<label class="contact-form-text">Mobile</label>
 								<input placeholder="address " name="phone" type="text" required="">
 							</div>
 							<div class="sec-left">
-								<label class="contact-form-text">current address</label>
+								<label class="contact-form-text">Current Address</label>
 								<input placeholder="address " name="address" type="text" required="">
 							</div>
 							<div class="sec-left">
@@ -80,7 +80,7 @@ include('includes/navbar.php');
 								<input placeholder="exprience " name="experience" type="text" required="">
 							</div>
 							<div class="sec-left">
-								<label class="contact-form-text">services</label>
+								<label class="contact-form-text">Services</label>
 								<input placeholder="service " name="services" type="text" required="">
 						
 						</div>

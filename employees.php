@@ -1,26 +1,27 @@
 <?php
 session_start();
-if(!isset($_SESSION['auth']))
-{
-header("Location: login.php");
-}
-include('includes/config.php');
-if ($_POST['_apply']){
-    $firstname = $_POST['firstname'];
+include ("includes/config.php");
+if(isset($_POST['_apply'])){
+    $name = $_POST['firstname'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $mobile = $_POST['phone'];
     $address = $_POST['address'];
     $education = $_POST['education'];
     $experience = $_POST['experience'];
-    $field = $_POST['services'];
-    $sql = "INSERT INTO employees (`firstname`, `lastname`, `email`, `phone`, `address`, `education`, `services`, `exprience`) VALUES ('$firstname', '$lastname', '$email', '$phone', '$address', '$education', '$field', '$experience')";
-    $query = mysqli_query($conn, $sql);
-    if ($query) {
-        $_SESSION['status']="your request has been sent";
-        header("Location: provider.php");
+    $services = $_POST['services'];
+    $date = date("Y-m-d");
+    
+   $sql="INSERT INTO `employees` (`em_id`, `firstname`, `email`, `phone`, `address`, `education`, `services`, `experience`, `date`) VALUES (NULL, '$name', '$email', '$mobile', '$address', '$education', '$experience', '$services', '$date');";
+    $query_run = mysqli_query($conn, $sql);
+    if($query_run){
+        $_SESSION['status'] = "we will contact you soon through call or email";
+        $_SESSION['status_code'] = "success";
+        header('Location: index.php');
     } else {
-        $_SESSION['status']="your request has not been sent";
-        header("Location: provider.php");
+        $_SESSION['status'] = "application Failed";
+        $_SESSION['status_code'] = "danger";
+        header('Location: index.php');
     }
+
 }
 ?>

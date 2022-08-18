@@ -1,17 +1,18 @@
 <?php
-include('/includes/config.php');
+session_start();
+include('includes/config.php');
+$_SESSION['auth'] = "OKAY";
 
 if(isset($_POST['login_btn']))
 {
-    $username_login = $_POST['username']; 
-    $password_login = $_POST['passwordd']; 
+    $email = $_POST['email']; 
+    $password = $_POST['password']; 
 
-    $query = "SELECT * FROM user_registration WHERE username='$username_login' AND password='$password_login' LIMIT 1";
+    $query = "SELECT * FROM user_registration WHERE email and password = '$email' and password = '$password'";
     $query_run = mysqli_query($conn, $query);
     
    if(mysqli_fetch_array($query_run))
    {
-        $_SESSION['username'] = $username_login;
         header('Location: index.php');
    } 
    else

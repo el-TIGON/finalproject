@@ -22,13 +22,12 @@
 			<td>Name</td>
 			<td>Email</td>
 			<td>Phone</td>
-			<td>address</td>
 			<td>service</td>
 			<td>date</td>
 
   		</tr>
   		<?php
-		include('../../includes/config.php');
+		include('../includes/config.php');
 if (isset($_POST['submit'])) {
 	
 $startDate = $_POST['StartDate'];

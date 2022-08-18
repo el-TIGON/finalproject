@@ -27,7 +27,7 @@
   			<td>Finish date</td>
   		</tr>
   		<?php
-		include('../../includes/config.php');
+		include('../includes/config.php');
 if (isset($_POST['submit'])) {
 	
 $startDate = $_POST['StartDate'];

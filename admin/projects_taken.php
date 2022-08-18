@@ -27,7 +27,7 @@ include('includes/navbar.php');
                     <!-- Page Heading -->
                     <div>
                     <h1 class="h3 mb-2 text-gray-800">Table for Projects</h1>
-                    <a href="request_report.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                    <a href="report.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
