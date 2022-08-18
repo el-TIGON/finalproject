@@ -68,19 +68,19 @@ include('includes/navbar.php');
 						<form action="booking.php" method="post" class="banner_form">
 							<div class="sec-left">
 								<label class="contact-form-text">Name</label>
-								<input placeholder="your name " name="username" type="text" required="">
+								<input placeholder="name " name="username" type="text" required="">
 							</div>
 							<div class="sec-right">
 								<label class="contact-form-text">Email</label>
-								<input placeholder=" your Email " name="email" type="email" required="">
+								<input placeholder="Email " name="email" type="email" required="">
 							</div>
-							<div class="sec-left">
-								<label class="contact-form-text">Mobile no.</label>
-								<input placeholder=" your mobile no" name="mobile" type="text" required="">
+							<div class="form-tx">
+								<label class="contact-form-text">Mobile</label>
+								<textarea placeholder="mobile number" required="" name="mobile" type ="number"></textarea>
 							</div>
 							<div class="form-tx">
 								<label class="contact-form-text">Address</label>
-								<textarea placeholder="your address" required="" name="address"></textarea>
+								<input placeholder="address" required="" name="address" type="text">
 							</div>
 							<div class="form-select sec-right">
 								<label class="contact-form-text">Select Service</label>
@@ -93,7 +93,6 @@ include('includes/navbar.php');
 									<option value="Gardening" >Gardening</option>
 									<option value="Cleaning" >Cleaning</option>
 									<option value="pests" >pests killer</option>
-									
 								</select>
 							</div>
 							<input type="submit" value="Submit" name="_submit">

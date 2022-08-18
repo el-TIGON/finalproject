@@ -26,12 +26,15 @@ $row=mysqli_fetch_array($query_run);
               </div>
               <div class="form-group">
                 <label>Payment in $</label>
-                <input type="text" name="payment" class="form-control" value="<?php echo $row['payment']; ?>">
+                <input type="number" name="payment" class="form-control" value="<?php echo $row['payment']; ?>">
               </div>
               <div class="form-group">
                 <label>Address</label>
                 <input type="text" name="address" class="form-control" value="<?php echo $row['address']; ?>">
               </div>
+              <div class="form-group">
+                <label>Employees</label>
+                <input type="number" name="employees" class="form-control" value="<?php echo $row['employees']; ?>">
               <div class="form-group">
                 <label>Start day</label>
                 <input type="date" name="startday" class="form-control" value="<?php echo $row['startday']; ?>">
@@ -52,9 +55,10 @@ $row=mysqli_fetch_array($query_run);
         $prdescription=$_POST['prdescription'];
         $payment=$_POST['payment'];
         $address=$_POST['address'];
+        $employees=$_POST['employees'];
         $startday=$_POST['startday'];
         $finishday=$_POST['finishday'];
-        $query="UPDATE project SET prname='$prname', prdescription='$prdescription', payment='$payment', address='$address', startday='$startday', finishday='$finishday' WHERE id='$id'";
+        $query="UPDATE project SET prname='$prname', prdescription='$prdescription', payment='$payment', address='$address', employees='$employees', startday='$startday', finishday='$finishday' WHERE id='$id'";
         $query_run=mysqli_query($conn,$query);
         if($query_run)
         {

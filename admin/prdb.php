@@ -9,15 +9,18 @@ if(isset($_GET['id'])) {
     $row = mysqli_fetch_array($query_run);
     $prname = $row['service'];
     $address = $row['address'];
-    $sql = "INSERT INTO `project` (`id`, `prname`, `prdescription`, `payment`, `address`, `startday`, `finishday`) VALUES (NULL, '$prname', '', '', '$address', '', '')";
-    $query_run = mysqli_query($conn, $sql);
-    if($query_run) {
+    $query_check = "SELECT * FROM project WHERE prname='$prname' AND address='$address'";
+    $query_run = mysqli_query($conn, $query_check);
+
+    if(mysqli_num_rows($query_run) > 0) {
+        $_SESSION['status'] = "project was added ";
+        $_SESSION['status_code'] = "danger";
+        header('Location: clients.php');
+    } else {
+        $sql = "INSERT INTO `project` (`id`, `prname`, `prdescription`, `payment`, `address`, `startday`, `finishday`) VALUES (NULL, '$prname', '', '', '$address', '', '')";
+        $query_run = mysqli_query($conn, $sql);
         $_SESSION['status'] = "project Added";
         $_SESSION['status_code'] = "success";
-        header('Location: projects_taken.php');
-    } else {
-        $_SESSION['status'] = "project Not Added";
-        $_SESSION['status_code'] = "error";
         header('Location: projects_taken.php');  
     }
 }

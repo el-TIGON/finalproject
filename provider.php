@@ -50,44 +50,42 @@ include('includes/navbar.php');
 						}
 						?>
 							<div class="sec-left">
-								<label class="contact-form-text">first Name</label>
-								<input placeholder=" " name="firstname" type="text" required="">
-							</div>
-							<div class="sec-left">
-								<label class="contact-form-text">last Name</label>
-								<input placeholder=" " name="lastname" type="text" required="">
+								<label class="contact-form-text">Name</label>
+								<input placeholder="name" name="firstname" type="text" required="">
 							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">email</label>
-								<input placeholder=" " name="email" type="email" required="">
+								<input placeholder="email" name="email" type="email" required="">
 							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">phone</label>
-								<input placeholder=" " name="phone" type="text" required="">
+								<input placeholder="address " name="phone" type="text" required="">
 							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">current address</label>
-								<input placeholder=" " name="address" type="text" required="">
-							</div><div class="sec-left">
+								<input placeholder="address " name="address" type="text" required="">
+							</div>
+							<div class="sec-left">
 								<label class="contact-form-text">Education level</label>
-								<select name="education">
+								<select name="education" required="">
 									<option value="0">---- SELECT ----</option>
 									<option value="highschool" >High school</option>
 									<option value="diploma" >Diploma</option>
 									<option value="degree" >Degree</option>
 								</select>
 							</div>
+							
+							<div class="sec-left">
+								<label class="contact-form-text">Experience</label>
+								<input placeholder="exprience " name="experience" type="text" required="">
+							</div>
 							<div class="sec-left">
 								<label class="contact-form-text">services</label>
-								<input placeholder=" " name="services" type="text" required="">
+								<input placeholder="service " name="services" type="text" required="">
 						
 						</div>
 						</div>
 						<div class="clearfix"></div>
-						<div class="sec-right">
-                            <label class="contact-form-text">CV</label>
-                            <input name="yourCV" type="file" required="">
-                        </div>
 						<div class="contact-form contact-field2">
 							<input type="submit" value="Apply" name="_apply">
 						</div>

@@ -9,6 +9,8 @@ if(isset($_GET['ser_id'])) {
     if($result) {
       
         header('location: service_provider.php');
+    } else {
+        echo "Error deleting record: " . mysqli_error($conn);
     }
 }
 ?>

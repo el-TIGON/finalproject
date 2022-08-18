@@ -25,6 +25,11 @@ include('includes/navbar.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+                    <div>
+                    <h1 class="h3 mb-2 text-gray-800">Table for Projects</h1>
+                    <a href="request_report.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
 
 
 <div class="card-body">
@@ -45,6 +50,7 @@ include('includes/navbar.php');
             <th>Project description</th>
             <th>Payment in $ </th>
             <th>Address</th>
+            <th>employees</th>
             <th>start day</th>
             <th>end day</th>
             <th colspan="2" >stutus </th>
@@ -60,6 +66,7 @@ include('includes/navbar.php');
                 $prdescription = $row['prdescription'];
                 $payment = $row['payment'];
                 $address = $row['address'];
+                $employee = $row['employees'];
                 $startday = $row['startday'];
                 $endday = $row['finishday'];
                 echo '<tr>
@@ -68,6 +75,7 @@ include('includes/navbar.php');
                 <td>'.$prdescription.'</td>
                 <td>'.$payment.'</td>
                 <td>'.$address.'</td>
+                <td>'.$employee.'</td>
                 <td>'.$startday.'</td>
                 <td>'.$endday.'</td>
                 <td><a href="project_delete.php?id='. $row ['id'] .'" class="btn btn-danger">Delete</a></td>
