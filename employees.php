@@ -11,16 +11,16 @@ if(isset($_POST['_apply'])){
     $services = $_POST['services'];
     $date = date("Y-m-d");
     
-   $sql="INSERT INTO `employees` (`em_id`, `firstname`, `email`, `phone`, `address`, `education`, `services`, `experience`, `date`) VALUES (NULL, '$name', '$email', '$mobile', '$address', '$education', '$experience', '$services', '$date');";
+   $sql="INSERT INTO `employees` (`em_id`, `firstname`, `email`, `phone`, `address`, `education`, `services`, `experience`, `date`) VALUES (NULL, '$name', '$email', '$mobile', '$address', '$education', '$services', '$experience', '$date');";
     $query_run = mysqli_query($conn, $sql);
     if($query_run){
         $_SESSION['status'] = "we will contact you soon through call or email";
         $_SESSION['status_code'] = "success";
-        header('Location: index.php');
+        header('Location: provider.php');
     } else {
         $_SESSION['status'] = "application Failed";
         $_SESSION['status_code'] = "danger";
-        header('Location: index.php');
+        header('Location: provider.php');
     }
 
 }

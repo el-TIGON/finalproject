@@ -25,6 +25,7 @@ include('includes/navbar.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+                   
 
 
 <div class="card-body">
@@ -61,7 +62,7 @@ include('includes/navbar.php');
                 <td>" . $row['ser_address'] . "</td>
                 <td>" . $row['ser_email'] . "</td>
                 <td>" . $row['ser_phone'] . "</td>
-                <td><a href='service_provider_delete.php?id=" . $row['ser_id'] . "' class='btn btn-danger'>Delete</a></td>
+                <td><a href='service_providers_delete.php?ser_id=" . $row['ser_id'] . "' class='btn btn-danger'>Delete</a></td>
                 </tr>";
             }
             ?>
@@ -70,16 +71,10 @@ include('includes/navbar.php');
       </table>
 
     </div>
-  </div>
-
-              
+  </div>      
 
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-     
 <?php 
 include ("includes/footer.php");
 include ("includes/scripts.php");

@@ -87,7 +87,7 @@ include('includes/navbar.php');
                 echo '<tr>
                 <td>'.$id.'</td>
                 <td>'.$username.'</td>
-                <td><a href="registration_delete.php?reg_id='.$id.'" class="btn btn-danger">Delete</a></td>
+                <td><a href="regis_delete.php?reg_id='.$id.'" class="btn btn-danger">Delete</a></td>
                 </tr>';
             }
             ?>  

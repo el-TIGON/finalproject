@@ -24,7 +24,11 @@ include('includes/navbar.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Table for service providers jobs requists</h1>
+                    <div>
+                    <h1 class="h3 mb-2 text-gray-800">Table for job applicants</h1>
+                    <a href="jobs_report.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -36,14 +40,13 @@ include('includes/navbar.php');
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>first Name </th>
-                                            <th>last Name</th>
+                                            <th>Name </th>
                                             <th>Email</th>
                                             <th>Phone</th>
                                             <th>Address</th>
                                             <th>Education</th>
                                             <th>Service</th>
-                                            <th>CV</th>
+                                            <th>Experience</th>
                                             <th colspan="2">Action</th>
                                         </tr>
                                     </thead>
@@ -56,15 +59,14 @@ include('includes/navbar.php');
                                                 echo "<tr>
                                                 <td>" . $row['em_id'] . "</td>
                                                 <td>" . $row['firstname'] . "</td>
-                                                <td>" . $row['lastname'] . "</td>
                                                 <td>" . $row['email'] . "</td>
                                                 <td>" . $row['phone'] . "</td>
                                                 <td>" . $row['address'] . "</td>
                                                 <td>" . $row['education'] . "</td>
-                                                <td>" . $row['service'] . "</td>
-                                                <td>" . $row['cv'] . "</td>
+                                                <td>" . $row['services'] . "</td>
+                                                <td>" . $row['experience'] . "</td>
                                                 <td> <a href='job_delete.php?em_id=" . $row['em_id'] . "' class='btn btn-danger'>Delete</a></td>
-                                                <td> <a href='service_providersdb.php?em_id=" . $row['em_id'] . "' class='btn btn-success'>Approve</a></td>
+                                                <td> <a href='spdb.php?em_id=" . $row['em_id'] . "' class='btn btn-success'>Approve</a></td>
                                                 </tr>";
                                             }
                                             ?>

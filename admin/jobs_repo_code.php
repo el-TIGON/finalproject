@@ -14,17 +14,17 @@
   		<tr>
   			<td colspan="6" class="bg bg-info" style="color:#ffff;">
   				<h1 class="text text-center text-success-success">
-  				<i class="fa fa-database"></i> Projects Report</h1>
+  				<i class="fa fa-users"></i> APPLICANTS Report</h1>
   			</td>
   		</tr>
   		<tr>
   			<td>NO#</td>
-  			<td>Project</td>
-			<td>Project Description</td>
-  			<td>Payment</td>
-			<td>employees</td>
-  			<td>Start date</td>
-  			<td>Finish date</td>
+  			<td>Name</td>
+			<td>Email</td>
+  			<td>Phone</td>
+			<td>Education</td>
+  			<td>Service</td>
+  			<td>Experience</td>
   		</tr>
   		<?php
 		include('../includes/config.php');
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 $startDate = $_POST['StartDate'];
 $EndDate = $_POST['EndDate'];
 
-$sql = mysqli_query($conn,"SELECT * FROM `project` WHERE startday BETWEEN '$startDate ' AND '$EndDate'");
+$sql = mysqli_query($conn,"SELECT * FROM `service_providers` WHERE date BETWEEN '$startDate ' AND '$EndDate'");
 while ($row = mysqli_fetch_array($sql)) {
  ?>
 	<tr>
