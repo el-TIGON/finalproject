@@ -1,9 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION['auth']))
+if( !isset( $_SESSION['username']) )
 {
-header("Location: login.php");
-}
+    header("Location: login.php");
+    exit();
+}else{
 include('../includes/config.php');
 include('includes/header.php');
 include('includes/navbar.php');
@@ -184,5 +185,6 @@ include('includes/navbar.php');
 <?php
 include ('includes/scripts.php');
 include('includes/footer.php');
+}
 ?>
        

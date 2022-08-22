@@ -1,5 +1,11 @@
 <?php
 session_start();
+if( !isset( $_SESSION['username']) )
+{
+    header("Location: login.php");
+    exit();
+}else{  
+      
 include ("includes/config.php");
 if(isset($_POST['_submit'])){
     $name = $_POST['username'];
@@ -21,4 +27,5 @@ if(isset($_POST['_submit'])){
         header('Location: index.php');
     } 
 }
+    }
 ?>

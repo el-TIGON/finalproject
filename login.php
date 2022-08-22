@@ -25,27 +25,30 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form action="logindb.php" class="login">
+               <form action="logindb.php" class="login" method="POST">
                   <div class="field">
-                     <input type="text" placeholder="Email Address" required="" name="email">
+                     <input type="text" placeholder="Username" required="" name="username">
                   </div>
                   <div class="field">
                      <input type="password" placeholder="Password" required="" name="password">
                   </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="submit" value="Login" name="login_btn">
+                     <input type="submit" value="Login" name="login">
                   </div>
                   <div class="signup-link">
                      Not a member? <a href="">Signup now</a>
                   </div>
                </form>
-               <form action="singupdb" class="signup">
+               <form action="logindb.php" class="signup" method = 'POST'>
                   <div class="field">
-                     <input type="text" placeholder="Email Address" required>
+                     <input type="text" placeholder="Username" required="" name="username"></div>
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" name="email" required>
                   </div>
+                  
                   <div class="field">
-                     <input type="password" placeholder="Password" required>
+                     <input type="password" placeholder="Password" name="password" required>
                   </div>
                   <div class="field">
                      <input type="password" placeholder="Confirm password" required>
