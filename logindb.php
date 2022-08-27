@@ -29,7 +29,7 @@ if(isset($_POST['login']))
     $sql="SELECT * FROM user_registration WHERE username= '$username' AND password='$password';";
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
-    if($resultCheck>0)
+    if($resultCheck=>0)
     {
         session_start();
         $_SESSION['username']=$username;

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../includes/config.php');
 
 if(isset($_POST['login_btn']))
@@ -11,12 +12,12 @@ if(isset($_POST['login_btn']))
     
    if(mysqli_fetch_array($query_run))
    {
-        $_SESSION['username'] = $username_login;
+        $_SESSION['username_login'] = $username_login;
         header('Location: index.php');
    } 
    else
    {
-        $_SESSION['status'] = "username / Password is Invalid";
+        echo "Username or password is incorrect";
         header('Location: login.php');
    }
 }
