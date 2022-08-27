@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['auth']))
+if(!isset($_SESSION['username_emp']))
 {
 header("Location: login.php");
 }

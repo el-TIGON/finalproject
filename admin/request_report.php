@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>report</title>
 		<link rel="stylesheet" href="styles/bootstrap/metro-theme.css">
  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
 </head>
@@ -11,7 +11,10 @@
 	<div style="height:100px"></div>
 <div class="col-md-8 col-md-offset-2 panel" style="border: 1px solid green;border-radius: 13px;">
 	<div class="text text-center text-success panel-heading">
-		<h1><i class="fa fa-print"></i> Requist Report</h1>
+		
+	</div>
+	<div class="text text-center text-success panel-heading">
+		<h1><i class="fa fa-print"></i> Request Report</h1>
 	</div>
 	<div class="panel-body">
 		<form class="form-horizontal" method="POST" action="requests.php">

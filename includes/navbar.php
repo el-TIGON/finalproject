@@ -54,17 +54,6 @@
 							<li>
 								<a href="provider.php">register as service provider</a>
 							</li>
-							<li>
-								<?php
-								session_start(); 
-								if( !isset( $_SESSION['username']) ){
-									echo '<a href="login.php">login</a>'
-								}else {
-									echo'<a href="logout.php">logout</a>'
-								}?>
-								
-							</li>
-							
 							
 						</ul>
 					</div>

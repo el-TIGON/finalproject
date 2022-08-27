@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
     $username=$_POST['username'];
     $email=$_POST['email'];
     $password=md5($_POST['password']);
-    //check if username already exists
+    
     $sql="SELECT * FROM user_registration WHERE username= '$username';";
     $result=mysqli_query($conn,$sql);
     $resultCheck=mysqli_num_rows($result);
@@ -28,17 +28,16 @@ if(isset($_POST['login']))
     $password=md5($_POST['password']);
     $sql="SELECT * FROM user_registration WHERE username= '$username' AND password='$password';";
     $result=mysqli_query($conn,$sql);
-    $resultCheck=mysqli_num_rows($result);
-    if($resultCheck=>0)
+    if(mysqli_fetch_array($result))
     {
         session_start();
-        $_SESSION['username']=$username;
-        header("Location: index.php");    
+        $_SESSION['username'] = $username;
+        header("Location: index.php");
     }
     else
     {
         echo "Username or password is incorrect";
-        header("Location: login.php");
+        header('Location: login.php');
     }
 }
 ?>

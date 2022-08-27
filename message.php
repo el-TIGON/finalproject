@@ -1,5 +1,10 @@
 <?php
 session_start();
+if( !isset( $_SESSION['username']) )
+{
+    header("Location: login.php");
+    exit();
+}else{
 include('includes/config.php');
 if (isset($_POST['__submit'])){
     $name = $_POST['Name'];
@@ -13,6 +18,6 @@ if (isset($_POST['__submit'])){
         $_SESSION['status']="Not we recieived your message Succesfully";
         header("Location:contact.php");
     }
-
+}
 }
 ?>

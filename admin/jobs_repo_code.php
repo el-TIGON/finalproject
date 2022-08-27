@@ -12,7 +12,7 @@
   <div class="container">
   	<table class="table table-bordered ">
   		<tr>
-  			<td colspan="6" class="bg bg-info" style="color:#ffff;">
+  			<td colspan="7" class="bg bg-info" style="color:#ffff;">
   				<h1 class="text text-center text-success-success">
   				<i class="fa fa-users"></i> APPLICANTS Report</h1>
   			</td>

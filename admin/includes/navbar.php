@@ -57,9 +57,15 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="registration.php">
+                <a class="nav-link" href="regs_admin.php">
                     <i class="fas fa-users"></i>
                     <span>Admin registration</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration.php">
+                    <i class=" fas fa-user"></i>
+                    <span>Employee registration</span>
+                </a>
             </li>
             
 
@@ -126,7 +132,7 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                    
-                    <?php echo $_SESSION['username']; ?>
+                    <?php echo $_SESSION['username_login']; ?>
 
                 </span>
                     <img class="img-profile rounded-circle"
